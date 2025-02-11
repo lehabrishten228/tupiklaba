@@ -1,0 +1,53 @@
+.navbar {
+    background: #333;
+    padding: 10px;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .dropdown {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .menuButton {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  }
+  
